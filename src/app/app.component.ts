@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ngOnChanges';
+  parentTitle = 'Default parent data';
+  metersModel: any = 0;
+  changeTitle(){
+    this.parentTitle = "Update parent value";
+  }
 }
